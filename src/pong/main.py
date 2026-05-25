@@ -27,4 +27,7 @@ def build_application() -> GameService:
 def main() -> None:
     """Entry point for the game."""
     application = build_application()
-    application.run()
+    try:
+        application.run()
+    except NotImplementedError as exc:
+        raise SystemExit(str(exc)) from exc
