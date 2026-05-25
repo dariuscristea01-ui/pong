@@ -1,0 +1,1 @@
+"""Timing adapters for Pong."""
